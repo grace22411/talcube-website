@@ -935,4 +935,60 @@ footer .container .row .col-md-2 ul li a, footer .container .row .col-md-3 ul li
   }
 }
 
+.privacy {
+  margin-top: 50px;
+}
+.privacy .row {
+  margin-bottom: 30px;
+}
+.privacy .row h1 {
+  color: #000;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+.privacy .row h3 {
+  font-size: 25px;
+  color: #736060;
+}
+.privacy .row p a {
+  color: #00A650;
+  font-weight: 500;
+}
+.privacy .row li {
+  margin-bottom: 15px;
+}
+@media only screen and (max-width: 320px) {
+  .privacy .row {
+    padding: 0 15px;
+  }
+  .privacy .row h3 {
+    font-size: 20px;
+  }
+  .privacy .row p {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .privacy .row {
+    padding: 0 30px;
+  }
+  .privacy .row h3 {
+    font-size: 20px;
+  }
+  .privacy .row p {
+    font-size: 13px;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .privacy .row {
+    padding: 0 50px;
+  }
+  .privacy .row h3 {
+    font-size: 20px;
+  }
+  .privacy .row p {
+    font-size: 13px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

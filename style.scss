@@ -1033,3 +1033,64 @@ footer{
        display: block;
     }
 }
+
+.privacy{
+    margin-top: 50px;
+    .row{
+        margin-bottom: 30px;
+        h1{
+            color:#000;
+            font-weight: 600;
+            margin-bottom: 14px;
+        }
+        h3{
+            font-size:25px;
+            color:#736060;
+        }
+        p{
+            a{
+                color:#00A650;
+                font-weight: 500;
+            }
+        }
+        li{
+            margin-bottom: 15px;;
+        }
+    }
+    @media only screen and (max-width:320px){
+        
+        .row{
+            padding: 0 15px;
+            h3{
+                font-size:20px;
+            }
+            p{
+                font-size:13px;
+            }
+        }
+    }
+    @media only screen and (min-width:321px) and (max-width:540px){
+        
+        .row{
+            padding:0 30px;
+            h3{
+                font-size:20px;
+            }
+            p{
+                font-size:13px;
+            }
+        }
+    }
+    @media only screen and (min-width:541px) and (max-width:720px){
+       
+       .row{
+        padding: 0 50px;
+        h3{
+            font-size:20px;
+        }
+        p{
+            font-size:13px;
+        }
+    }
+    }
+}
