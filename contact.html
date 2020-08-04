@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Talcube | Scale your business</title>
 
-    <link rel="icon" href="">
+    <link rel="icon" href="images/Web ICON REVISED.png">
 
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -23,37 +23,33 @@
         rel="stylesheet">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.6.0/slick.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="modal-content ">
-        <div class="inn animated zoomIn">
-            <div class="cancel"><i class="fas fa-times"></i></div>
-            <ul>
-                <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="service.html">Services</a></li>
-                <li><a href="">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+
+    <div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-confirm" role="document">
+            <div class="modal-content">
+                <div class="modal-header justify-content-center">
+                    <div class="icon-box">
+                        <i class="material-icons">&#xE876;</i>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                </div>
+                <div class="modal-body text-center">
+                    <h4>Great!</h4>	
+                    <p>Your message has been sent successfully.</p>
+                    
+                </div>
+            </div>
         </div>
-    </div>
-    <header>
-       <div class="container">
-        <a href="index.html">
-            <div class="logo"><img src="images/logo.png" alt=""></div>
-        </a>
-        <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="service.html">Services</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <i class="fas fa-bars"></i>
-       </div>
-    </header>
+    </div>  
+
+
+    <main-header></main-header>
 
     <div class="container contact-us">
         <div class="row">
@@ -77,11 +73,10 @@
                         <select name="" id="">
                             <option value="1">Website Development</option>
                             <option value="2">Digital Markrting</option>
-                            <option value="3">Design</option>
-                            <option value="4">Writing</option>
-                            <option value="5"></option>
-                            <option value="6"></option>
-                            <option value="7"></option>
+                            <option value="3">Creatives & Design</option>
+                            <option value="4">Creative Writing</option>
+                            <option value="5">Course Development</option>
+                            <option value="6">Engineering Design</option>
                         </select>
                       </div>
 
@@ -89,11 +84,11 @@
                         <label for="exampleInputEmail1">Job Specifications <span>*</span></label><br>
                         <textarea name=""></textarea>
                       </div>
-                    <button type="submit" >Send</button>
+                    <a href="#myModal" class="trigger-btn" data-toggle="modal" data-target="#myModal"><button type="submit" >Send</button></a>
                   </form>
             </div>
             <div class="col-md-6">
-                <img src="images/Asset 1.png"  class="img-fluid" alt="contact image">
+                <img src="images/Contact.png"  class="img-fluid" alt="contact image">
             </div>
         </div>
     </div>
@@ -146,9 +141,15 @@
     <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="js/script.js"></script>
     <script src="js/wow.min.js"></script>
+    <script type="text/javascript" src="js/component.js"></script>
     <script type="text/javascript">
         new WOW().init();
     </script>
+    <script type="text/javascript">
+        $(".trigger-btn").click(function(){
+           $(".trigger-btn").modal();
+           });
+        </script>
     </body>
     
     </html>
