@@ -11,107 +11,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-.modal-confirm {
-  color: #434e65;
-  width: 525px;
-}
-
-.modal-confirm .modal-content {
-  padding: 20px;
-  font-size: 16px;
-  border-radius: 5px;
-  border: none;
-}
-
-.modal-confirm .modal-header {
-  background: #47c9a2;
-  border-bottom: none;
-  position: relative;
-  text-align: center;
-  margin: -20px -20px 0;
-  border-radius: 5px 5px 0 0;
-  padding: 35px;
-}
-
-.modal-confirm h4 {
-  text-align: center;
-  font-size: 36px;
-  margin: 10px 0;
-}
-
-.modal-confirm .form-control, .modal-confirm .btn {
-  min-height: 40px;
-  border-radius: 3px;
-}
-
-.modal-confirm .close {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  color: #fff;
-  text-shadow: none;
-  opacity: 0.5;
-}
-
-.modal-confirm .close:hover {
-  opacity: 0.8;
-}
-
-.modal-confirm .icon-box {
-  color: #fff;
-  width: 95px;
-  height: 95px;
-  display: inline-block;
-  border-radius: 50%;
-  z-index: 9;
-  border: 5px solid #fff;
-  padding: 15px;
-  text-align: center;
-}
-
-.modal-confirm .icon-box i {
-  font-size: 64px;
-  margin: -4px 0 0 -4px;
-}
-
-.modal-confirm.modal-dialog {
-  margin-top: 80px;
-}
-
-.modal-confirm .btn, .modal-confirm .btn:active {
-  color: #fff;
-  border-radius: 4px;
-  background: #eeb711 !important;
-  text-decoration: none;
-  transition: all 0.4s;
-  line-height: normal;
-  border-radius: 30px;
-  margin-top: 10px;
-  padding: 6px 20px;
-  border: none;
-}
-
-.modal-confirm .btn:hover, .modal-confirm .btn:focus {
-  background: #eda645 !important;
-  outline: none;
-}
-
-.modal-confirm .btn span {
-  margin: 1px 3px 0;
-  float: left;
-}
-
-.modal-confirm .btn i {
-  margin-left: 1px;
-  font-size: 20px;
-  float: right;
-}
-
-.trigger-btn {
-  display: inline-block;
-  margin: 100px auto;
-}
-
 button {
   width: 150px;
   height: 50px;
@@ -1237,6 +1136,125 @@ a#prev:hover, a#next:hover {
 
 .next-one {
   margin-top: 50px;
+}
+
+.success-page {
+  width: 40%;
+  height: auto;
+  margin: 80px auto;
+  background-color: #fff;
+}
+.success-page .success-header {
+  width: 100%;
+  height: 150px;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  text-align: center;
+  padding-top: 35px;
+  background-color: #00A650;
+  /* other styles */
+  /* .svg svg {
+      display: none
+  }
+   */
+  /* .svg img {
+      display: none
+  } */
+}
+@-webkit-keyframes checkmark {
+  0% {
+    stroke-dashoffset: 50px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-ms-keyframes checkmark {
+  0% {
+    stroke-dashoffset: 50px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes checkmark {
+  0% {
+    stroke-dashoffset: 50px;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@-webkit-keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 240px;
+  }
+  100% {
+    stroke-dashoffset: 480px;
+  }
+}
+@-ms-keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 240px;
+  }
+  100% {
+    stroke-dashoffset: 480px;
+  }
+}
+@keyframes checkmark-circle {
+  0% {
+    stroke-dashoffset: 240px;
+  }
+  100% {
+    stroke-dashoffset: 480px;
+  }
+}
+.success-page .success-header .inlinesvg .svg svg {
+  display: inline;
+}
+.success-page .success-header .icon--order-success svg path {
+  -webkit-animation: checkmark 0.25s ease-in-out 0.7s backwards;
+  animation: checkmark 0.25s ease-in-out 0.7s backwards;
+  -webkit-animation-delay: 3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 1s;
+}
+.success-page .success-header .icon--order-success svg circle {
+  -webkit-animation: checkmark-circle 0.6s ease-in-out backwards;
+  animation: checkmark-circle 0.6s ease-in-out backwards;
+  -webkit-animation-delay: 2s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0s;
+}
+.success-page .success-body {
+  text-align: center;
+  padding: 40px;
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+.success-page .success-body button {
+  margin-top: 20px;
+  width: auto;
+  padding: 0 20px;
+}
+.success-page .success-body button i {
+  margin-left: 15px;
+}
+@media only screen and (max-width: 320px) {
+  .success-page {
+    width: 90%;
+  }
+}
+@media only screen and (min-width: 321px) and (max-width: 540px) {
+  .success-page {
+    width: 85%;
+  }
+}
+@media only screen and (min-width: 541px) and (max-width: 720px) {
+  .success-page {
+    width: 75%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

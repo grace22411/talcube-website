@@ -9,7 +9,7 @@ class Header extends HTMLElement {
                 <li><a href="about.html">About</a></li>
                 <li><a href="service.html">Services</a></li>  
                 <li><a href="reviews.html">Testimonials</a></li>
-                <li><a href="">Blog</a></li>
+                <li><a href="https://blog.talcube.com">Blog</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </div>
@@ -24,7 +24,7 @@ class Header extends HTMLElement {
             <li><a href="about.html">About</a></li>
             <li><a href="service.html">Services</a></li>
             <li><a href="reviews.html">Testimonials</a></li>
-            <li><a href="">Blog</a></li>
+            <li><a href="https://blog.talcube.com">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>
         </ul>
         <i class="fas fa-bars"></i>
